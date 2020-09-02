@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Johnalex Currency converter</title>
+
+        <link rel="stylesheet" href="style.css">
+        <script src="angular.min.js"></script>
+    </head>
+    <body>
+
+        <div class="container">
+                <h2>JOHNALEX CURRENCY CONVERTER</h2>
+                <i>Converts naira to dollars</i>
+
+                <div ng-app="" ng-init="naira=1 ; dollar=360">
+                    Amount in Naira: <input type="number" ng-model="naira"><br>
+                    Value in Dollars: <input type="number" ng-model="dollar" disabled>
+
+                    <p>Total amount in dollars: ${{naira*dollar}}</p>
+                </div>
+        </div>
+        
+    </body>
+</html>
